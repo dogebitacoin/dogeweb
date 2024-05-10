@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haosen | Choose your own adventure game</title>
+</head>
+<body>
+    <script>
+        function playGame(){
+
+        
+            
+        var playgame = confirm("Do you want to play my game?");
+        alert(playgame);
+        if (playgame == true){
+            alert("Thanks for playing my game!");
+
+            var freddystoilet = prompt("You see freddy fazbears toilet. What do you do? Type 1 to pee in it, 2 to enter it, 3 to drink the juices");
+
+            if (freddystoilet == 1){
+                alert("You have disrespected sir freddy. You died");
+
+
+            }   
+            else if (freddystoilet == 2){
+                alert("You have found the backrooms! ")
+                var backrooms = prompt("Do you want to enter the backrooms? Type 1 to scream, 2 to enter, 3 to leave");
+                
+                if (backrooms == 1){
+                    alert("You scream and you attract Granny. You died");
+                }
+                else if (backrooms == 2){
+                    alert("You enter backrooms and see Shrek");
+
+                    var shrek = prompt("What do you do with Shrek, he wants you to come with him. Type 1 to fight him, type 2 to run and leave, type 3 to follow him");
+
+                    if (shrek == 1){
+                        alert("Shrek is too gigachad and you die. you lose");
+                    }
+                    else if (shrek == 2){
+                        alert("your valorant user has changed to wussyman223. you lose");
+                    }
+                    else{
+                        alert("you are now stuck in the backrooms. you lose");
+                    }
+
+                }
+                else if (backrooms == 3){
+                    alert("Your valorant user has been changed to wussyman223. you lose");
+                }
+            
+            }
+            else if (freddystoilet == 3){
+                alert("You feel a little skibidi!")
+
+                var skibidi = prompt("You seem to be a little woozy from the skibidi jucies, type 1 to leave, 2 to drink more, and 3 to say 'what the sigma' and imbrace sigma");
+
+                if (skibidi == 1){
+                    alert("ur valorant user has been changed to wussyman223. you lose");
+                }
+                else if (skibidi ==2){
+                    alert("You are drunk on skibidi juices and become a 4 year old roblox game. you lose");
+                }
+                else{
+                    alert("You say what the sigma and a gigachad appears before you and tells you he can take you to sigmaland with all the skibidis");
+                    var gigachad = confirm("follow the gigachad?");
+
+                    if (gigachad == true){
+                        alert("you are now in sigmaland where you belong with the skibidis. you win");
+
+                    }
+                    else{
+                        alert("your valorant username has been changed to wussyman223. you lose");
+                    }
+                }
+            }
+        }
+        else{
+            alert("wow you suck for not playing my game");
+           
+        }
+    
+        var playagain = confirm('Do you want to play again?')
+        if (playagain == true){
+            playGame();
+        }
+        else{
+            alert('thanks for playing my game!')
+        }
+        }
+        
+        playGame();
+    </script>
+    
+</body>
+</html>

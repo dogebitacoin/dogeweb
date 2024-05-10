@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haosen| JS DEMO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/Javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div> <h1> learning js now</h1></div>
+    
+    <div><h2>onclikc event oh yeaa</h2></div>
+    <p><a href="https://www.google.com" target="_blank" onclick = "alert ('warning you will get virus if you leave')"> Search Google</a></p>
+    <h2>math with js</h2>
+    <p>what is 5+6 bro</p>
+    <button onclick="document.getElementById('add').innerHTML= 5+6">click now if ur too dum</button>
+    <p id="add"></p>
+    <h2>heres the date and time you gotta get a watch sometime loser</h2>
+    <button onclick="document.getElementById('date').innerHTML=Date()">click here if you really dont have a watch</button>
+    <p id="date"></p>
+    <h2>chaning text now</h2>
+    <button onclick="document.getElementById('change text').innerHTML='you did it'">i change text </button>
+    <p id="change text">this changes  soon</p>
+    <div>
+        <h2>How to make function</h2>
+        <p>lets use a function</p>
+        <button onclick="pFun()"> Click me to run</button>
+        <b><p id="p-fun"></p></b>
+    </div>
+    <div>
+        <h2>returning user data</h2>
+        <button onclick="askName()">Click here to eneter ur name</button>
+        <p id="ask-name"></p>
+        <h2>how to ask questions with external js</h2>
+        <button onclick="askQuestion()">click to ask question</button>
+        <p id="question"></p>
+
+        <h2>how to make image appear with button</h2>
+        <button onclick="showImage()"></button>
+        <img id="suprise" src="" width="700px">
+    </div>
+       <script>
+        alert("I am the bset guy pleae buy me")
+
+        function askName(){
+            var namReturn = document.getElementById('ask-name');
+            var name = prompt('please enter name', 'here');
+            if(name == ''){
+                alert('please try again');
+            }
+            else{
+                nameReturn.innerHTML = 'hello' + name + 'hi';       
+            }
+        }
+        function pFun() {
+            var p = document.getElementById('p-fun');
+            p.innerHTML= 'you ran function nice';
+            p.style.fontSize = '30px';
+            p.style.color = 'magenta';
+            p.style.textAlign = 'center';
+        }
+    </script>
+
+</body>
+</html>
