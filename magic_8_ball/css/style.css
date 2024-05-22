@@ -1,0 +1,15 @@
+body{
+    background-color: green;
+}
+#fortune{
+    background-color:black;
+    color: red;
+    width: 500px;
+    height:300px;
+    border-radius:200px;
+    margin: 50px;
+    padding-top: 80px;
+    vertical-align: center;
+    text-align: center;
+    font-size: 70px;
+}
